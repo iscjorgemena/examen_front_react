@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
 import PresenceShareServices from '../services/PresenceShare.services'
-import Helpers from './utlils/Helpers'
+import { Row, Col } from 'react-bootstrap';
+import Helpers from '../utlils/Helpers'
 
 const GraphPresenceShare = () => {
 
@@ -64,10 +65,20 @@ const GraphPresenceShare = () => {
     }
 
     return (
-
-        <div className='bg-graph'>
-            <Chart options={options} series={series} type="pie" width='100%' height={300} />
-        </div>
+        <>
+            <Row>
+                <Col sm='12'>
+                    <h3 className='title-sections'>Presence Share by Product</h3>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm='12'>
+                    <div className='bg-graph'>
+                        <Chart options={options} series={series} type="pie" width='100%' height={300} />
+                    </div>
+                </Col>
+            </Row>
+        </>
     )
 }
 

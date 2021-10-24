@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 #main-header {
   width           : 100%;
   padding         : 10px;
@@ -10,9 +12,87 @@
   width: 80px;
 }
 
+.title-main {
+  font-size  : 40px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.title-sections {
+  font-size  : 24px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
 .bg-graph {
   width           : 100%;
   height          : auto;
   background-color: #fff;
   padding         : 10px;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.img-product {
+  width: 80px;
+}
+
+.name-product {
+  margin-top : 5%;
+  margin-left: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
+.list-products tbody tr:nth-child(even) {
+  background-color: #E9E9E9;
+  border          : 1px solid #E9E9E9;
+}
+
+.list-products td,
+.list-products th {
+  vertical-align: middle;
+}
+
+.list-products thead {
+  background: #A6A6A7;
+}
+
+.list-products thead th {
+  padding: 23px;
+}
+
+.list-products thead th {
+  font-weight: 600;
+  font-size  : 20px;
+  line-height: 32px;
+}
+
+.list-products tbody {
+  border-top: 0px !important;
+}
+
+.list-products tbody td {
+  font-weight: 600;
+  font-size  : 20px;
+  line-height: 32px;
+  color      : #656566;
+}
+
+.negative-number {
+  color: #D6215B;
+}
+
+.positive-number {
+  color: #23B794;
 }

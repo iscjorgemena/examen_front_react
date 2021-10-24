@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
 import PriceEvolutionServices from '../services/PriceEvolution.services'
-import Helpers from './utlils/Helpers'
+import Helpers from '../utlils/Helpers'
+import { Row, Col } from 'react-bootstrap';
 import moment from 'moment'
 
 const GraphPriceEvolution = () => {
     var optionsChart = {
-        colors: ['#d6215b', '#7530b2', '#ffb448'],
+        chart: {
+            toolbar: {
+                show: false
+            }
+        },
         xaxis: {
             categories: [],
             labels: {
                 formatter: (value) => { return moment(value).format('MMM DD') }
             },
         },
+        colors: ['#d6215b', '#7530b2', '#ffb448'],
         yaxis: {
             forceNiceScale: true,
             min: 0,
@@ -27,6 +33,7 @@ const GraphPriceEvolution = () => {
 
     const [options, setOptions] = useState({})
     const [series, setSeries] = useState([])
+
     useEffect(() => {
         async function fetchData() {
             getData();
@@ -249,9 +256,20 @@ const GraphPriceEvolution = () => {
     }
 
     return (
-        <div className='bg-graph'>
-            <Chart options={options} series={series} type="line" width='100%' height={300} />
-        </div>
+        <>
+            <Row>
+                <Col sm='12'>
+                    <h3 className='title-sections'>Price Evolution</h3>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm='12'>
+                    <div className='bg-graph'>
+                        <Chart options={options} series={series} type="line" width='100%' height={300} />
+                    </div>
+                </Col>
+            </Row>
+        </>
     )
 }
 
