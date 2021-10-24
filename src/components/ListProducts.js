@@ -140,7 +140,7 @@ const ListProducts = () => {
             </Row>
             <Row>
                 <Col sm='12'>
-                    <Table hover responsive className='list-products'>
+                    <Table hover responsive="sm" className='list-products'>
                         <thead className='text-center'>
                             <tr>
                                 <th>Nombre</th>
