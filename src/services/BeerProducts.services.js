@@ -1,4 +1,4 @@
-import API from './api';
+import API from '../config/api';
 const moduleAPI = 'beer-products'
 
 const BeerProductsServices = {

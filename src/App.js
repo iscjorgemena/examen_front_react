@@ -14,11 +14,29 @@ function App() {
       </Row>
       <Row>
         <Col sm='8'>
-          <GraphPriceEvolution />
+          <Row>
+            <Col sm='12'>
+              <h2>Price Evolution</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm='12'>
+              <GraphPriceEvolution />
+            </Col>
+          </Row>
         </Col>
 
         <Col sm='4'>
-
+        <Row>
+            <Col sm='12'>
+              <h2>Presence Share by Product</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm='12'>
+              <GraphPriceEvolution />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Layout>
