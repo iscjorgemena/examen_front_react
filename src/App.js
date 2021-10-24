@@ -3,20 +3,21 @@ import Layout from './components/layout/Layout';
 import { Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GraphPriceEvolution from './components/GraphPriceEvolution';
+import GraphPresenceShare from './components/GraphPresenceShare';
 
 function App() {
   return (
     <Layout>
       <Row>
         <Col>
-          <h1>General Performance Analysis</h1>
+          <h2>General Performance Analysis</h2>
         </Col>
       </Row>
       <Row>
         <Col sm='8'>
           <Row>
             <Col sm='12'>
-              <h2>Price Evolution</h2>
+              <h3>Price Evolution</h3>
             </Col>
           </Row>
           <Row>
@@ -27,14 +28,14 @@ function App() {
         </Col>
 
         <Col sm='4'>
-        <Row>
+          <Row>
             <Col sm='12'>
-              <h2>Presence Share by Product</h2>
+              <h3>Presence Share by Product</h3>
             </Col>
           </Row>
           <Row>
             <Col sm='12'>
-              <GraphPriceEvolution />
+              <GraphPresenceShare />
             </Col>
           </Row>
         </Col>

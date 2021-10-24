@@ -9,3 +9,10 @@
 #main-header img {
   width: 80px;
 }
+
+.bg-graph {
+  width           : 100%;
+  height          : auto;
+  background-color: #fff;
+  padding         : 10px;
+}

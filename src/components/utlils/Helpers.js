@@ -12,7 +12,6 @@ const Helpers = {
             return r;
         }, Object.create(null));
         result = Object.entries(result)
-        //console.log(result);
         result.forEach(element => {
             let add_name = true;
             let item = {
@@ -40,8 +39,20 @@ const Helpers = {
             b = b.split('/').reverse().join('');
             return a > b ? 1 : a < b ? -1 : 0;
         })
-        console.log(response);
 
+        return response
+    },
+
+    formatDataPresenceShare: (data) => {
+        let response = {
+            labels: [],
+            series: []
+        }
+        data.forEach(function (element) {
+            response.labels.push(element.name);
+            response.series.push(element.presenceShare);
+        })
+        console.log(response);
         return response
     }
 };
