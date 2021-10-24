@@ -67,14 +67,14 @@ const GraphPresenceShare = () => {
     return (
         <>
             <Row>
-                <Col sm='12'>
+                <Col lg={12} xs={12} md={12}>
                     <h3 className='title-sections'>Presence Share by Product</h3>
                 </Col>
             </Row>
-            <Row>
-                <Col sm='12'>
+            <Row >
+                <Col lg={12} xs={12} md={12}>
                     <div className='bg-graph'>
-                        <Chart options={options} series={series} type="pie" width='100%' height={300} />
+                        <Chart options={options} series={series} type="pie" width='100%' />
                     </div>
                 </Col>
             </Row>

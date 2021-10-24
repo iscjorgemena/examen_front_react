@@ -258,12 +258,12 @@ const GraphPriceEvolution = () => {
     return (
         <>
             <Row>
-                <Col sm='12'>
+                <Col lg={12} xs={12} md={12}>
                     <h3 className='title-sections'>Price Evolution</h3>
                 </Col>
             </Row>
             <Row>
-                <Col sm='12'>
+                <Col lg={12} xs={12} md={12}>
                     <div className='bg-graph'>
                         <Chart options={options} series={series} type="line" width='100%' height={300} />
                     </div>

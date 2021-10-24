@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
+#main-container {
+  padding-top: 70px;
+}
+
 #main-header {
   width           : 100%;
   padding         : 10px;
   text-align      : left;
   background-color: #006fff;
   margin-bottom   : 10px;
+  position        : fixed;
+  z-index         : 2;
+  box-shadow      : 0 0 2px 0 rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 24%);
 }
 
 #main-header img {

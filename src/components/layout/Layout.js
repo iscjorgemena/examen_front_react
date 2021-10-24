@@ -6,9 +6,10 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <Container fluid>
+            <Container fluid id='main-container'>
                 {children}
             </Container>
+
         </>
     )
 }

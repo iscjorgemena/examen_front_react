@@ -134,13 +134,13 @@ const ListProducts = () => {
     return (
         <>
             <Row>
-                <Col sm='12'>
+                <Col lg={12} xs={12} md={12}>
                     <h3 className='title-sections'>Comparative Analysis</h3>
                 </Col>
             </Row>
             <Row>
-                <Col sm='12'>
-                    <Table hover responsive="sm" className='list-products'>
+                <Col lg={12} xs={12} md={12}>
+                    <Table hover responsive="md" className='list-products'>
                         <thead className='text-center'>
                             <tr>
                                 <th>Nombre</th>
