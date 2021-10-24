@@ -1,4 +1,4 @@
-import API from './api';
+import API from '../config/api';
 const moduleAPI = 'presence-share-chart'
 
 const PresenceShareServices = {
